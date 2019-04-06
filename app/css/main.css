@@ -1,3 +1,6 @@
+/*
+ * Base CSS Styling starts here
+ */
 html {
   box-sizing: border-box;
 }
@@ -9,5 +12,93 @@ html {
 }
 
 body {
+  /* @TODO base font style */
   margin: 0;
 }
+
+/*
+ * Utilities
+ */
+
+/*
+ * Layout
+ */
+ nav{
+	width: 100%;
+	height:50px;
+	padding: 0px 40px;
+	border-bottom: 1px #eee solid;
+}
+.nav-logo{
+	float: left;
+	color:#226547;
+}
+.nav-links{
+	float: right;
+}
+.nav-links ul{
+	list-style: none;
+}
+.nav-links ul>li{
+	float:left;
+	margin-left:40px;
+	font: 1em sans-serif;
+	font-weight: 500;
+
+}
+.nav-links ul>li>a.active{
+	color:#226547;
+}
+.nav-links ul>li>a.active ~ span{
+	color:#226547;
+	text-align: center;
+	display: block;
+	content: '';
+	background: #226547;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.nav-links ul>li>a:hover{
+	color:#226547;
+}
+.nav-links ul>li>a{
+	text-decoration: none;
+	color: #15251e;
+	display: block;
+}
+.nav-links ul>li>a~span{
+	text-align: center;
+	display: block;
+	content: '';
+	background: #fff;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	margin: 0 auto;
+
+}
+.nav-links ul>li>a:hover ~span{
+	text-align: center;
+	display: block;
+	content: '';
+	background: #226547;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	margin: 0 auto;
+
+}
+
+/*
+ * Components
+ */
+
+.btn {
+  cursor: pointer;
+}
+
+/*
+ * Animations and state utilities
+ */
