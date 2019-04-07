@@ -5,41 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HNG-DragonSlayers</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
     <!-- Local Style -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="container">
-
-  		<nav class="nav">
-  			<div class="nav-logo"><h3>LT</h3></div>
-  			<div class="nav-links">
-  				<ul>
-  					<li><a href="#" class="active">Timeline</a><span>  </span></li>
-  					<li><a href="articles.html">My Articles</a><span>  </span></li>
-  					<li><a href="about.html">About</a><span>  </span></li>
-  					<li><a href="contact.html">Contact</a><span>  </span></li>
-  				</ul>
-  			</div>
-      </nav>
-      
-      <aside>
-        <img src="" alt="" class="profile-image">
-        <div class="bio"></div>
-        <div class="social-links">
-          <a href="" class="github-icon"></a>
-          <a href="" class="medium-icon"></a>
-          <a href="" class="twitter-icon"></a>
-        </div>
-      </aside>
-
-      <main>
-        <div class="WYSIWYG-editor"></div>
-        <button type="submit" class="btn post">POST</button>
-        <div class="post-tags"></div>
-        <div class="posts-feed"></div>
-      </main>
-    </div>
-    
+    <!-- Navbar -->
+    <nav class="navbar p1">
+      <a href="#" class="btn btn--light" id="signup-btn">Create an Account</a>
+    </nav>
+    <!-- Login -->
+    <main class="container login">
+      <h1 class="h1 text--center">Welcome Back</h1>
+      <div class="authcard">
+        <a href="#" class="btn authcard__btn">Sign in with Google</a>
+        <span></span>
+        <span class="my2 authcard__or">Or</span>
+        <span></span>
+        <a href="#" class="btn authcard__btn">Sign in with Facebook</a>
+      </div>
+      <p class="footnote text--small">
+        By signing in, you agree to our
+        <a href="#" class="text--success">Terms</a> &
+        <a href="#" class="text--success">Conditions</a>
+      </p>
+    </main>
   </body>
 </html>
