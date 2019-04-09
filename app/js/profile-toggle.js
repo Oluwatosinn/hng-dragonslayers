@@ -3,6 +3,8 @@ const drop = document.querySelector('.drop-down');
 const profileEdit = document.querySelector('.profile-edit--form');
 const settings = document.querySelector('.settings');
 const dropSettings = document.querySelector('.drop-down--settings');
+const tab = document.querySelector('.profile-edit--tab');
+const tabSettings = document.querySelector('.settings-tab');
 
 function once(seconds, callback) {
   let counter = 0;
@@ -13,7 +15,7 @@ function once(seconds, callback) {
       callback();
       window.clearInterval(time);
     }
-  }, 400);
+  }, 500);
 }
 
 function slideDown(elem) {
@@ -62,5 +64,5 @@ function slideSettings() {
   }
 }
 
-drop.addEventListener('click', slide);
-dropSettings.addEventListener('click', slideSettings);
+tab.addEventListener('click', slide);
+tabSettings.addEventListener('click', slideSettings);

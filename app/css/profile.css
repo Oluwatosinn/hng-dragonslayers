@@ -16,12 +16,12 @@
 .profile-edit--form, .settings {
     width: inherit;
     height: 15rem;
-    background-color: black; /*dropdown made black for visibility, can  be removed*/
+    background-color: black; /*dropdown made black for visibility, should  be removed*/
     margin: 0.2rem 0;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease 0s;
+    transition: max-height 0.5s ease 0s;
 }
 
 .drop-down, .drop-down--settings {
