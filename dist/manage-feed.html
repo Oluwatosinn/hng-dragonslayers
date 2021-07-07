@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog App</title>
+
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+
+  <body>
+    <section class="user-section">
+      <div class="user-image">
+        <img src="img/avatar.png" alt="avatar" />
+      </div>
+      <div class="user-info">
+        <h2>Saviour Essien</h2>
+        <p>Designer - UI/UX & Brand Identity</p>
+        <p>Always happy</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-medium"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="#" class="active-link">Timeline</a></li>
+          <li><a href="#">My Articles</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="manage-feed">
+        <div class="manage-feed-head">
+          <span class="link">Profile > Manage Feed</span>
+          <span class="desc">Manage blogs you follow and discover new ones</span>
+        </div>
+
+        <div class="activity-tabs">
+
+          
+            <div class="tab-toggle">Recently viewed <i class="chevron"></i></div>
+            <div class="recent-tab-content tab-content">
+                <div class="viewed-blog">
+                  <img src="img/noah-buscher.png" class="blogger-avatar rounded-img"/>
+                  <div class="viewed-blog-info">
+                    <span class="title">Tomi Lara</span>
+                    <span class="date">tomilara@gmail.com</span>
+                  </div>
+                  <div class="viewed-blog-blogger">
+                      <span class="name">Tomi Lara</span>
+                      <span class="email">tomilara@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="viewed-blog">
+                    <img src="img/avatar.png" class="blogger-avatar rounded-img"/>
+                    <div class="viewed-blog-info">
+                      <span class="title">Tomi Lara</span>
+                      <span class="date">tomilara@gmail.com</span>
+                    </div>
+                    <div class="viewed-blog-blogger">
+                        <span class="name">Tomi Lara</span>
+                        <span class="email">tomilara@gmail.com</span>
+                    </div>
+                  </div>
+              </div>
+          
+          
+            <div class="tab-toggle">Archived <i class="chevron"></i></div>
+            <div class="archived-content tab-content">
+                <div class="viewed-blog">
+                    <img src="img/avatar.png" class="blogger-avatar rounded-img"/>
+                    <div class="viewed-blog-info">
+                      <span class="title">Tomi Lara</span>
+                      <span class="date">tomilara@gmail.com</span>
+                    </div>
+                    <div class="viewed-blog-blogger">
+                        <span class="name">Tomi Lara</span>
+                        <span class="email">tomilara@gmail.com</span>
+                    </div>
+                  </div>
+  
+                  <div class="viewed-blog">
+                      <img src="img/avatar.png" class="blogger-avatar rounded-img"/>
+                      <div class="viewed-blog-info">
+                        <span class="title">Tomi Lara</span>
+                        <span class="date">tomilara@gmail.com</span>
+                      </div>
+                      <div class="viewed-blog-blogger">
+                          <span class="name">Tomi Lara</span>
+                          <span class="email">tomilara@gmail.com</span>
+                      </div>
+                    </div>
+            </div>
+          
+          
+            <div class="tab-toggle">Following <i class="chevron"></i></div>
+            <div class="follow-content tab-content">
+                <div class="bloggers">
+                    <img src="img/joe-robles.png" class="blogger-avatar rounded-img"/>
+                    <div class="blogger-info">
+                      <span class="name">Tomi Lara</span>
+                      <span class="mail">tomilara@gmail.com</span>
+                    </div>
+                    <button class="btn sub">Subscribe</button>
+                </div>
+                <div class="bloggers">
+                    <img src="img/avatar.png" class="blogger-avatar rounded-img"/>
+                    <div class="blogger-info">
+                      <span class="name">Tomi Lara</span>
+                      <span class="mail">tomilara@gmail.com</span>
+                    </div>
+                    <button class="btn unsub">Unsubscribe</button>
+                </div>
+                <div class="bloggers">
+                    <img src="img/noah-buscher.png" class="blogger-avatar rounded-img"/>
+                    <div class="blogger-info">
+                      <span class="name">Tomi Lara</span>
+                      <span class="mail">tomilara@gmail.com</span>
+                    </div>
+                    <button class="btn unsub">Unsubscribe</button>
+                </div>
+            </div>
+         
+          
+        </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    var tabs = document.getElementsByClassName("tab-toggle");
+    var i;
+
+    for (i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", function() {
+        this.classList.toggle("active-tab");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>

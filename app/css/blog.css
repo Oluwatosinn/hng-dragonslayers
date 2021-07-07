@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-black:#FCFCFC;
+}
+
+body,html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+}
+.clear-fix {
+    clear: both;
+}
+
+.btn {
+    background: #086963;
+    border: #086963;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 25px;
+}
+
+.btn-button {
+    color: rgb(255, 255, 255);
+}
+
+.user-section {
+    background: #FCFCFC;
+    float: left;
+    height: 100%;
+    padding-top: 30px;
+    /*position: absolute;*/
+    text-align: center;
+    width: 25%;
+}
+
+.navigation {
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation li a {
+    color: #333333;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+ul li a.active-link {
+    color: #086963;
+}
+
+.news-feed {
+    float: right;
+    margin: 50px auto 0 auto;
+    padding-right: 30px;
+    width: 70%;
+}
+
+.article-form {
+    background: #FCFCFC;
+    border-radius: 4px;
+    margin-bottom: 70px;
+    padding: 15px;
+}
+
+.article-form input[type="text"],
+.article-form textarea {
+    border: 1px solid #333333;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.article-form input[type="text"] {
+    color: #A7A7A7;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.post {
+    border-top: 0.5px solid #DADADA;
+    position: relative;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.author-image {
+    position: absolute;
+    top: 40px;
+}
+
+.author-image img {
+    height: auto;
+    width: 50%;
+}
+
+.article-title {
+    padding: 0 75px;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.post-time,
+.author-name {
+    float: left;
+    margin-right: 10px;
+}
+
+.post-time {
+    font-size: 11px;
+    line-height: normal;
+    color: #A7A7A7;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: normal;
+    color: #717171;
+}
+
+.article-text {
+    padding: 0 75px;
+    text-align: justify;
+}
+
+
+.contact-section{
+    padding-left: 50px;
+}
+
+.subscription .info span{
+    display: block;
+}
+
+
+.subscription .info{
+    margin-bottom: 20px;
+}
+
+.subscription .info .header{
+    font-family: Raleway,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    margin: 10px 0;
+}
+
+.subscription .info .info-text{
+    font-family: Raleway,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    color: #999999;
+
+}
+.subscription .form textarea{
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    resize: none;
+}
+
+.subscription .form button{
+    background: #FFFFFF;
+    border: 1px solid #086963;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: #086963;
+}
+
+.manage-feed-header {
+    color: #086963;
+}
+
+.manage-feed-header a {
+    text-decoration: none;
+    color: #086963;
+    font-weight: 500;
+}
+
+.manage-feed-title {
+    color: #999999;
+    margin-bottom: 20px;
+    font-size: 15px
+}
+
+.manage-feed-body {
+    color: #333333;
+    margin-bottom: 10px;
+    height: 21px;
+}
+
+div.feed {
+    width: 100%;
+    font-family: Raleway;
+    height: 50px;
+    margin-top: 20px
+}
+
+div.user-feed-image {
+    width: 10%;
+    float: left;
+}
+
+div.user-feed-image img {
+    width: 40px;
+    height: 40px;
+}
+
+div.user-data {
+    width: 75%;
+    float: left;
+    height: 50px;
+    position: relative;
+}
+
+.user-data .user-name,
+.user-link {
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    color: #333333;
+}
+
+.user-link {
+    top: 40%;
+    text-decoration: none;
+    color: #A7A7A7
+}
+
+
+div.user-action {
+    text-align: center;
+    width: 15%;
+    float: left;
+}
+
+.unsubscribe-button {
+    color: #FFFFFF !important;
+    background: #00C7BB;
+    padding: 10px;
+    border: 1px solid #086963 !important;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.unsubscribe-button:hover {
+    color: #00C7BB !important;
+    background: #ffffff;
+    border-color: #086963 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.subscribe-button {
+    background: #FFFFFF !important;
+    color: #00C7BB;
+    padding: 10px;
+    border: 1px solid #086963 !important;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%
+}
+
+.subscribe-button:hover {
+    background: #00C7BB !important;
+    color: #ffffff;
+    border-color: #ffffff !important;
+    transition: all 0.4s ease 0s;
+}
+
+hr {
+    border: 1px solid #DADADA;
+}
+.social-icons {
+    display: flex;
+    justify-content:center;
+}
+
+.fa-github{
+    margin-right: 9px;
+}
+
+.fa-medium{
+    margin-right: 9px;
+}
+
+hr{
+    width: 80%;
+}
+
+
+=======
+/**
+Manage-Feed CSS
+**/
+.manage-feed{
+    float: left;
+    width: 75%;
+    padding-top: 30px;
+    background-color: #FCFCFC;
+    min-height: 100%;
+    position: absolute;
+    left: 25%;
+}
+.manage-feed-head .link{
+    width: 187px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: bold;
+    color: #086963;
+}
+
+.manage-feed-head .desc{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: normal;
+    color: #999999;
+    display: block;
+    margin-top:8px;
+}
+
+.manage-feed .activity-tabs{
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #333333;
+    padding: 10px;
+}
+.manage-feed .activity-tabs>div.tab-toggle{
+    width:96%;
+    height:32px;
+    margin-bottom:12px;
+    background-color: #eeeeee;
+    padding: 6px;
+    border-radius: 2px;
+}
+.manage-feed .activity-tabs>div:first-child{
+    margin-top:20px;
+}
+.manage-feed .activity-tabs>div .chevron{
+    background: url("../img/chevron-up.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    float: right;
+}
+.active-tab, .manage-feed .activity-tabs>div.tab-toggle:hover{
+    background-color: rgb(221, 216, 216);
+    cursor:pointer;
+}
+.activity-tabs>div.active-tab .chevron{
+    background: url("../img/chevron-down.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    float: right;
+}
+.tab-content{
+    display: none;
+    width:100%;
+    height: auto;
+}
+.manage-feed .bloggers, .manage-feed .viewed-blog{
+    height: 70px;
+    width: 96%;
+    padding: 3px;
+    padding-bottom: 20px;
+    padding-top: 10px; 
+    border-bottom: 1px solid #DADADA;
+}
+img.blogger-avatar{
+    width:36px;
+    height: 36px;
+}
+.bloggers>div.blogger-info, .viewed-blog>div.viewed-blog-info{
+    display: inline-grid;
+    width: 40%;
+    margin-left: 10px;
+    position: absolute;
+    margin-left: 8px;
+}
+.viewed-blog>div.viewed-blog-blogger{
+    display: inline-grid;
+    float: right;
+    text-align: right;
+}
+.bloggers>button{
+    float: right;
+    border: #086963 1px solid;
+    width: 143px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.bloggers>button.unsub:hover{
+    background-color: #a6bfbe;
+}
+.bloggers>button.sub:hover{
+    background-color: #065853;
+}
+.bloggers>button.sub{
+    border:0px;
+    background-color: #086963;
+    color: #fff;
+}
+.bloggers>button.unsub{
+    border:0px;
+    background-color: #fff;
+    color: #086963;
+    border: #086963 1px solid;
+}
+.bloggers .blogger-info>span.name, .viewed-blog .viewed-blog-info>span.head{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: normal;
+    color: #333333;
+}
+.bloggers .blogger-info>span.mail, .viewed-blog .viewed-blog-info>span.date{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: normal;
+    color: #A7A7A7;
+    
+}
+.viewed-blog>div.viewed-blog-blogger>span.name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    color: #A7A7A7;
+}
+.viewed-blog>div.viewed-blog-blogger>span.email{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: normal;
+    color: #A7A7A7;
+}
+.tab-content div:last-child{
+    margin-bottom: 18px;
+}
+.rounded-img{
+    border-radius: 50%;
+}
+
